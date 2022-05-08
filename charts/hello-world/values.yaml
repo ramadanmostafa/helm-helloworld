@@ -25,3 +25,8 @@ serviceAccount:
 service:
   type: ClusterIP
   port: 80
+
+proxyConfig:
+  http_proxy: "http://proxy.example.com:8080"
+  https_proxy: "http://proxy.example.com:8080"
+  no_proxy: "localhost,127.0.0.1"
